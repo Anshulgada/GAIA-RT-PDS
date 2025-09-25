@@ -1,0 +1,28 @@
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+.ruff_cache/
+
+# Ignore virtual environments
+.venv/
+env/
+venv/
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.swp
+
+# Ignore archive files
+*.rar
+*.zip
+*.tar.gz
+
+# Ignore YOLO dataset and other files
+.env
+Yolo/
+models/
+
+# Ignore system files
+.DS_Store
+Thumbs.db

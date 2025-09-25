@@ -1,0 +1,80 @@
+[project]
+name = "GAIA-RT-PDS"
+version = "1.0.0"
+description = "G.A.I.A.: A real-time pothole detection system using YOLOv10, featuring intelligent GPS tracking, reverse geocoding, and automated email alerts for seamless road monitoring."
+authors = [{ name = "GAIA Team", email = "anshulgada05@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+keywords = [
+    "real-time",
+    "pothole",
+    "detection",
+    "yolo",
+    "gps",
+    "email-alerts",
+    "computer-vision",
+    "image-processing",
+    "video-analysis",
+    "object-detection",
+    "machine-learning",
+    "artificial-intelligence",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Computer Vision",
+    "Topic :: Scientific/Engineering :: Object Detection",
+    "Topic :: Scientific/Engineering :: Machine Learning",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+
+]
+
+# Full installation with all optional features
+dependencies = [
+    # Core ML and Image Processing
+    "ultralytics>=8.0.0",
+    "opencv-python>=4.5.0",
+    "pillow>=8.0.0",
+    "numpy>=1.21.0",
+
+    # CLI and Output
+    "click>=8.0.0",
+    "rich>=12.0.0",
+    "rich-click>=1.9.1",
+
+    # FFmpeg Python bindings
+    "ffmpeg-python>=0.2.0",
+
+    # GPS & Location Services
+    "piexif>=1.1.3",
+    "geopy>=2.2.0",
+
+    # Google APIs for Email & Authentication 
+    "google-api-python-client>=2.0.0",
+    "google-auth-oauthlib>=0.5.0",
+    "google-auth-httplib2>=0.1.0",
+]
+[project.optional-dependencies]
+dev = ["huggingface-hub>=0.35.1", "requests>=2.32.5"]
+
+[project.scripts]
+pothole-detector = "pothole_detector:cli"
+
+[project.urls]
+Homepage = "https://github.com/Anshulgada/GAIA-RT-PDS"
+Repository = "https://github.com/Anshulgada/GAIA-RT-PDS"
+Dataset = "https://huggingface.co/datasets/Anshulgada/RT-PDS"
+Documentation = "https://github.com/Anshulgada/GAIA-RT-PDS/blob/main/README.md"

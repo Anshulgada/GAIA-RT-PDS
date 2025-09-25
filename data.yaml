@@ -1,0 +1,14 @@
+names:
+  - PH
+nc: 1
+
+roboflow:
+  license: CC BY 4.0
+  project: pds-new
+  url: https://universe.roboflow.com/pothole-annotation-np4pr/pds-new/dataset/1
+  version: 1
+  workspace: pothole-annotation-np4pr
+
+test: test/images
+train: train/images
+val: valid/images
